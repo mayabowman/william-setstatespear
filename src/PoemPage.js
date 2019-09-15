@@ -2,6 +2,7 @@ import React from 'react'
 import POEMS from './poems'
 
 export default function PoemPage(props) {
+  console.log(props)
   const poem = POEMS.find(p =>
     p.id === props.match.params.poemId
   )
